@@ -1,0 +1,12 @@
+{
+  "roots": ["~/your-project"],
+  "port": 8765,
+  "allow_write": false,
+  "allow_shell": false,
+  "lanes_dir": "../lanes",
+  "jobs_dir": "./.jobs",
+  "audit_log": "./audit.jsonl",
+  "shell_timeout": 45,
+  "job_timeout": 3600,
+  "max_jobs": 4
+}

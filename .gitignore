@@ -1,0 +1,7 @@
+server/config.json
+server/.jobs/
+server/audit.jsonl
+__pycache__/
+lanes/*
+!lanes/example/
+lanes/example/checkins.md

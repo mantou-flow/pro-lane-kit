@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "pro-lane-kit · 自动继续和重试（默认关闭）",
+  "version": "1.0.0",
+  "description": "工作框停下 90 秒自动发“继续”、报错自动点“重试”。两个功能默认关闭，要在脚本里手动打开。只在 chatgpt.com 运行，不收集、不发送任何数据。可能违反使用条款，风险自负。",
+  "host_permissions": ["https://chatgpt.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["auto-retry.js", "auto-continue.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

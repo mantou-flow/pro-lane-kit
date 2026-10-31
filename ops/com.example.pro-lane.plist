@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- macOS 开机自启示例。把两处路径改成你的，放进 ~/Library/LaunchAgents/，再 launchctl load。 -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.example.pro-lane</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/venv/bin/python</string>
+    <string>/path/to/pro-lane-kit/server/pro_lane_server.py</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>SoftResourceLimits</key>
+  <dict><key>NumberOfFiles</key><integer>4096</integer></dict>
+</dict>
+</plist>
